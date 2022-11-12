@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-tap
+  description: Python django test app for TAP
+  tags:
+    - python
+    - django
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=python-tap'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
